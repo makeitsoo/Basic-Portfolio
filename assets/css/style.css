@@ -37,14 +37,14 @@ class or id being used in CSS to cusotmize.
 
 */
 
+/*use relative for the header area and absolute for the label for h1.*/
+
+
+
 body {
-	background: #F1F2F2;
+	background-color: #F1F2F2;
 }
 
-header {
- 	background: ##4aaaa5;
- 	
-}
 
 h1, h2, h3 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
@@ -54,16 +54,45 @@ h2, h3 {
 	color: #4aaaa5;
 }
 
-.navButtons {
+header {
+	position:relative;
+	background-color: #ffffff;
+}
+
+aside {
+	float:right;
+	border-style:solid;
+}
+
+nav {
+	float:right;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
+.bio {
+
+	margin:50px;
+}
+
+#bioPic {
+	float:left;
+	height:300px;
+	width:200px;
+}
+
 #nameLogo {
-	float: left;
+	position: absolute;
 	color:white;
-	background: #4aaaa5;
+	background-color: #4aaaa5;
 	border:solid;
 	margin:0;
 	padding:20px;
+	float:left;
 
+}
+
+
+#main-aboutme {
+	border-style:solid;
+	float:left;
 }
